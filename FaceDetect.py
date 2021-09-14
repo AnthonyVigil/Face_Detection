@@ -1,5 +1,8 @@
 import cv2
+#Use algorithm for face detection
 face_cascade = cv2.CascadeClassifier('face_detector.xml')
+
+#Uses image from within folder
 img = cv2.imread('Faces.jpg')
 
 faces = face_cascade.detectMultiScale(img, 1.1, 4)
